@@ -16,9 +16,9 @@
   <button id="start-btn" name="start-btn">Start Survey</button>
   <form id="quiz">
 
-    <div id="survey">
+  <div id="survey">
     <div id="q1">
-      <h2>What is your favorite color?</h2>
+      <h2>#1 What is your favorite color?</h2>
       <label><input type="radio" name="q1" value="c1">
         Red
       </label><br />
@@ -31,7 +31,7 @@
     </div>
 
     <div id="q2">
-      <h2>Would you rather work …?</h2>
+      <h2>#2 Would you rather work …?</h2>
       <label><input type="radio" name="q2" value="c1">
         Frontend 
       </label><br />
@@ -44,7 +44,7 @@
     </div>
 
     <div id="q3">
-      <h2>What is most important?</h2>
+      <h2>#3 What is most important?</h2>
       <label><input type="radio" name="q3" value="c1">
         Design
       </label><br />
@@ -57,20 +57,20 @@
     </div>
 
     <div id="q4">
-      <h2>What do you prefer?</h2>
+      <h2>#4 What do you prefer?</h2>
       <label><input type="radio" name="q4" value="c1">
         Creating
       </label><br />
       <label><input type="radio" name="q4" value="c2">
-        Creating and Refraining
+        Creating and Refining
       </label><br />
       <label><input type="radio" name="q4" value="c3">
-        Refraining
+        Refining
       </label><br />
     </div>
 
     <div id="q5">
-      <h2>Where do you take your first bite on a banana?</h2>
+      <h2>#5 Where do you take your first bite on a banana?</h2>
       <label><input type="radio" name="q5" value="c1">
         Top
       </label><br />
@@ -81,9 +81,22 @@
         The side
       </label><br />
     </div>
-</div>
+  </div>
+
+  <div class="result">
+    <div id="ruby">
+      <h2>Check out Ruby!</h2>
+    </div>
+    <div id="javescript">
+      <h2>Check out Javescript!</h2>
+    </div>
+    <div id="c#">
+      <h2>Check out C#!</h2>
+    </div>
+  </div>
 
 <button type="submit" id="submit" onclick="getResults();">Submit Your Answers</button>
+<textarea id="output"></textarea>
 <button type="reset" id="reset" onclick="resetForm();">Reset</button>
 
 </body>
