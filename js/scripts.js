@@ -33,14 +33,21 @@ function getResults(){
     surveyResponse="C#";
   
   }
-  document.getElementById('output').innerHTML = "Your Programing Language is " + surveyResponse;
-}
 
-document.getElementById("submit").addEventListener("click", function(event){
-  event.preventDefault()
-});
+
+document.getElementById("output").innerHTML = "Your Programing Language is " + surveyResponse;
+showResults = function() {
+  window.alert("output");
+document.getElementById("getResults").addEventListener("onclick", function(event){
+    event.preventDefault()
+  });
+
+  showResults = function() {
+    window.alert("output");
 
 function resetForm() {
   location.reload;
+}}
+}
 }
 

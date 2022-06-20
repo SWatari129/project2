@@ -14,7 +14,8 @@ h1{
   background-color: #444;
   color: #fff;
 }
-#output{
+output{
+  display: show; 
   font-weight: 300;
   margin: 0px;
   padding: 10px;
