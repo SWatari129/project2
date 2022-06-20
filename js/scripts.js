@@ -5,7 +5,7 @@ function getResults(){
   let choice3=0;
 
   let choicesArray=document.getElementsByTagName('input');
-
+    
 
   for(let i=0; i<choicesArray.length;i++) {
     if(choicesArray[i].checked) {
@@ -20,7 +20,6 @@ function getResults(){
       }
     }  
   }
-
   let totalScore=Math.max(choice1,choice2,choice3);
 
   let surveyResponse;
@@ -36,6 +35,12 @@ function getResults(){
   }
   document.getElementById('output').innerHTML = "Your Programing Language is " + surveyResponse;
 }
+
+document.getElementById("submit").addEventListener("click", function(event){
+  event.preventDefault()
+});
+
 function resetForm() {
   location.reload;
 }
+

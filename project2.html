@@ -10,98 +10,87 @@
 </head>
 
 <body>
-  <h1>Programing Language Quiz</h1>
-  <p>Take this questionnaire to find out!</p>
-
-  <button id="start-btn" name="start-btn">Start Survey</button>
-  <form id="quiz">
-
-  <div id="survey">
-    <div id="q1">
-      <h2>#1 What is your favorite color?</h2>
-      <label><input type="radio" name="q1" value="c1">
-        Red
-      </label><br />
-      <label><input type="radio" name="q1" value="c2">
-        Yellow
-      </label><br />
-      <label><input type="radio" name="q1" value="c3">
-        Blue
-      </label><br />
-    </div>
-
-    <div id="q2">
-      <h2>#2 Would you rather work …?</h2>
-      <label><input type="radio" name="q2" value="c1">
-        Frontend 
-      </label><br />
-      <label><input type="radio" name="q2" value="c2">
-        Fullstack
-      </label><br />
-      <label><input type="radio" name="q2" value="c3">
-        Backend
-      </label><br />
-    </div>
-
-    <div id="q3">
-      <h2>#3 What is most important?</h2>
-      <label><input type="radio" name="q3" value="c1">
-        Design
-      </label><br />
-      <label><input type="radio" name="q3" value="c2">
-        Performance
-      </label><br />
-      <label><input type="radio" name="q3" value="c3">
-        Functionality
-      </label><br />
-    </div>
-
-    <div id="q4">
-      <h2>#4 What do you prefer?</h2>
-      <label><input type="radio" name="q4" value="c1">
-        Creating
-      </label><br />
-      <label><input type="radio" name="q4" value="c2">
-        Creating and Refining
-      </label><br />
-      <label><input type="radio" name="q4" value="c3">
-        Refining
-      </label><br />
-    </div>
-
-    <div id="q5">
-      <h2>#5 Where do you take your first bite on a banana?</h2>
-      <label><input type="radio" name="q5" value="c1">
-        Top
-      </label><br />
-      <label><input type="radio" name="q5" value="c2">
-        Bottom
-      </label><br />
-      <label><input type="radio" name="q5" value="c3">
-        The side
-      </label><br />
-    </div>
+  <div id ="response" surveyResponse>
   </div>
+  <div id="wrapper">
+    <h1>Programing Language Quiz</h1>
+    <p>Take this questionnaire to find out!</p>
 
-  <!--<div class="results">
-    <div id="ruby">
-      <h2>Check out Ruby!</h2>
-    </div>
-    <div id="javescript">
-      <h2>Check out Javescript!</h2>
-    </div>
-    <div id="c#">
-      <h2>Check out C#!</h2>
-    </div>
-  </div>*-->
+    <form id="quiz">
+      <div id="survey">
+        <div id="q1">
+          <h2>What is your favorite color?</h2>
+          <label><input type="radio" name="q1" value="c1">
+            Red
+          </label><br />
+          <label><input type="radio" name="q1" value="c2">
+            Yellow
+          </label><br />
+          <label><input type="radio" name="q1" value="c3">
+            Blue
+          </label><br />
+        </div>
 
-<button type="submit" id="submit" onclick="getResults();">Submit Your Answers</button>
-<button type="reset" id="reset" onclick="resetForm();">Reset</button>
-  </form>
-    <div id="answer">Get your result here!
-      <h2 id="output"></h2>
+        <div id="q2">
+          <h2>Would you rather work …?</h2>
+          <label><input type="radio" name="q2" value="c1">
+            Frontend 
+          </label><br />
+          <label><input type="radio" name="q2" value="c2">
+            Fullstack
+          </label><br />
+          <label><input type="radio" name="q2" value="c3">
+            Backend
+          </label><br />
+        </div>
+
+        <div id="q3">
+          <h2>What is most important?</h2>
+          <label><input type="radio" name="q3" value="c1">
+            Design
+          </label><br />
+          <label><input type="radio" name="q3" value="c2">
+            Performance
+          </label><br />
+          <label><input type="radio" name="q3" value="c3">
+            Functionality
+          </label><br />
+        </div>
+
+        <div id="q4">
+          <h2>What do you prefer?</h2>
+          <label><input type="radio" name="q4" value="c1">
+            Creating
+          <label><input type="radio" name="q4" value="c2">
+            Creating and Refraining
+          </label><br />
+          <label><input type="radio" name="q4" value="c3">
+            Refraining
+          </label><br />
+        </div>
+
+        <div id="q5">
+          <h2>Where do you take your first bite on a banana?</h2>
+          <label><input type="radio" name="q5" value="c1">
+            Top
+          </label><br />
+          <label><input type="radio" name="q5" value="c2">
+            Bottom
+          </label><br />
+          <label><input type="radio" name="q5" value="c3">
+            The side
+        </label><br />
+      </div>
     </div>
-</div>
+
+    <button type="submit" id="submit" onclick="getResults();">Submit Your Answers</button>
+    <button type="reset" id="reset" onclick="resetForm();">Reset</button>
+      
+    </form>
+      <div id="answer">Get your result here!
+        alert(<h2 id="output"></h2>)
+      </div>
+    </div>
 
 </body>
 </html>
