@@ -29,3 +29,6 @@ button{
 button:hover{
 	background-color: #38a;
 }
+.results {
+  display: none;
+}
