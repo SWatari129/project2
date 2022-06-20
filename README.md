@@ -15,7 +15,7 @@ A class project that uses HTML, CSS, and JavaScript.
 A personal progect that uses HTML, CSS, and JavaScript. A short personal quiz to recommend a coding language.
 
 ## Setup/Installation Requirements
-* [Click here](https://github.com/SWatari129/project1) to view the project on GitHub.
+* [Click here](https://github.com/SWatari129/project2) to view the project on GitHub.
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory.
 * Open project2.html

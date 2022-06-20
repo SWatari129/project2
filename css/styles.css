@@ -29,6 +29,24 @@ button{
 button:hover{
 	background-color: #38a;
 }
-.results {
-  display: none;
+#output{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #65ba87;
+  color: #fff;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
 }

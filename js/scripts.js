@@ -1,9 +1,11 @@
+//declaring variables
 function getResults(){
   let choice1=0;
   let choice2=0;
   let choice3=0;
 
   let choicesArray=document.getElementsByTagName('input');
+
 
   for(let i=0; i<choicesArray.length;i++) {
     if(choicesArray[i].checked) {
