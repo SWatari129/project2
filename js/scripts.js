@@ -22,18 +22,36 @@ function getResults(){
   }
   let totalScore=Math.max(choice1,choice2,choice3);
 
+    let surveyResponse;
+      if(choice1==totalScore) {
+      surveyResponse="Ruby";
+    }
+      if(choice2==totalScore) {
+      surveyResponse="JavaScript";
+    }
+      if(choice3==totalScore) {
+      surveyResponse="C#";
+    }
+    alert("Your Programing Language is " + surveyResponse);
+  }
+
+  console.log(choice1);
+  console.log(choice2);
+  console.log(choice3);
+
+  let totalScore=Math.max(choice1,choice2,choice3);
+  console.log(totalScore);
+
   let surveyResponse;
   if(choice1==totalScore) {
     surveyResponse="Ruby";
-  }
-  if(choice2==totalScore) {
-    surveyResponse="JavaScript";
-  }
-  if(choice3==totalScore) {
+    function getResults(){
     surveyResponse="C#";
-  
   }
-
+  alert("Your Programing Language is " + surveyResponse);
+}
+function resetForm() {
+  location.reload;
 
 document.getElementById("output").innerHTML = "Your Programing Language is " + surveyResponse;
 showResults = function() {

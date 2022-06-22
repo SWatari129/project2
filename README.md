@@ -23,7 +23,10 @@ A personal progect that uses HTML, CSS, and JavaScript. A short personal quiz to
 
 ## Known Bugs
 
-* Having issues with the pictures of portland in the background. I’m working on having the image scroll with the page. For now, it’s staying up top.
+* Having problems getting the results returned.
+
+* Continuing to work on the preventDefault. 
+
 
 ## License
 
