@@ -35,37 +35,4 @@ function getResults(){
     alert("Your Programing Language is " + surveyResponse);
   }
 
-  console.log(choice1);
-  console.log(choice2);
-  console.log(choice3);
-
-  let totalScore=Math.max(choice1,choice2,choice3);
-  console.log(totalScore);
-
-  let surveyResponse;
-  if(choice1==totalScore) {
-    surveyResponse="Ruby";
-    function getResults(){
-    surveyResponse="C#";
-  }
-  alert("Your Programing Language is " + surveyResponse);
-}
-function resetForm() {
-  location.reload;
-
-document.getElementById("output").innerHTML = "Your Programing Language is " + surveyResponse;
-showResults = function() {
-  window.alert("output");
-document.getElementById("getResults").addEventListener("onclick", function(event){
-    event.preventDefault()
-  });
-
-  showResults = function() {
-    window.alert("output");
-
-function resetForm() {
-  location.reload;
-}}
-}
-}
-
+  
