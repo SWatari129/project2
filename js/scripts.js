@@ -5,6 +5,9 @@ function getResults(){
   let choice3=0;
 
   let choicesArray=document.getElementsByTagName('input');
+
+  let submit  = document.querySelector("#submit")
+  let reset  = document.querySelector("#reset")
     
 
   for(let i=0; i<choicesArray.length;i++) {
@@ -34,5 +37,8 @@ function getResults(){
     }
     alert("Your Programing Language is " + surveyResponse);
   }
-
+  
+  window.addEventListener('load',function() {
+      
+  }
   
