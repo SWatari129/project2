@@ -8,28 +8,24 @@
   <script src="js/scripts.js"></script>
   <title>Personality Coding Test</title>
 </head>
-
 <body>
-  <div id ="response" surveyResponse>
-  </div>
   <div id="wrapper">
     <h1>Programing Language Quiz</h1>
     <p>Take this questionnaire to find out!</p>
-
-    <form id="quiz">
-      <div id="survey">
-        <div id="q1">
-          <h2>What is your favorite color?</h2>
-          <label><input type="radio" name="q1" value="c1">
-            Red
-          </label><br />
-          <label><input type="radio" name="q1" value="c2">
-            Yellow
-          </label><br />
-          <label><input type="radio" name="q1" value="c3">
-            Blue
-          </label><br />
-        </div>
+  <form id="quiz">
+    <div id="survey">
+      <div id="q1">
+        <h2>What is your favorite color?</h2>
+        <label><input type="radio" name="q1" value="c1">
+          Red
+        </label><br />
+        <label><input type="radio" name="q1" value="c2">
+          Yellow
+        </label><br />
+        <label><input type="radio" name="q1" value="c3">
+          Blue
+        </label><br />
+      </div>
 
         <div id="q2">
           <h2>Would you rather work …?</h2>
@@ -83,14 +79,9 @@
         </label><br />
       </div>
     </div>
-
-    <button type="submit" id="submit" onclick="getResults();">Submit Your Answers</button>
-    <button type="reset" id="reset" onclick="resetForm();">Reset</button>
-      
+      <input type="submit" value="submit" />
+      <div class="hidden" id="feedback"></div>
     </form>
-      <div id="answer">Get your result here!
-        <h2 id="output"></h2>
-      </div>
-    </div>
-</body>
+  </div>
+  </body>
 </html>

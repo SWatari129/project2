@@ -1,5 +1,32 @@
+//Business Logic
+function getResults() {
+  let choice1 = 0;
+  let choice2 = 0;
+  let choice3 = 0;
+
+  for (let i = 0; i < choicesArray.length; i++) { 
+      if (choicesArray[i] === "c1") {
+        choice1++;
+      }
+      if (choicesArray[i] === "c2") {
+        choice2++;
+      }
+      if (choicesArray[i] === "c3") {
+        choice3++;
+      }
+    }
+
+  if (choice1 > choice2 && choice3) {
+    return "Ruby";
+  } else if (choice2 > choice1 && choice3) {
+    return "JavaScript";
+  } else {
+    return "C#";
+  }
+}
+// UI Logic
 window.addEventListener("load", function () {
-  const form = document.querySelector("#quiz");
+  const form = document.getElementById("quiz");
   const feedback = document.getElementById("feedback");
 
   form.addEventListener("submit", (e) => {
@@ -15,38 +42,13 @@ window.addEventListener("load", function () {
 
     choicesArray = [q1, q2, q3, q4, q5];
 
-    function getResults() {
-      let choice1 = 0;
-      let choice2 = 0;
-      let choice3 = 0;
-
-      for (let i = 0; i < choicesArray.length; i++) {
-        if (choicesArray.length > 0) {
-          if (choicesArray[i] === "c1") {
-            choice1++;
-          }
-          if (choicesArray[i] === "c2") {
-            choice2++;
-          }
-          if (choicesArray[i] === "c3") {
-            choice3++;
-          }
-        }
-      }
-
-      if (choice1 > choice2 && choice3) {
-        return "Ruby";
-      } else if (choice2 > choice1 && choice3) {
-        return "JavaScript";
-      } else {
-        return "C#";
-      }
-    }
-
-    let answer = getResults();
+    let answer = getResults(choicesArray);
+    element = document.querySelector(".hidden");
+    element.style.setProperty("display", "block");
     feedback.innerHTML += `Your Programing Language is ${answer}`;
   });
 });
+
 
 
     
