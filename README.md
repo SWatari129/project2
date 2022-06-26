@@ -22,11 +22,7 @@ A personal progect that uses HTML, CSS, and JavaScript. A short personal quiz to
 
 
 ## Known Bugs
-
-* Having problems getting the results returned.
-
-* Continuing to work on the preventDefault. 
-
+* None
 
 ## License
 
