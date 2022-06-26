@@ -1,21 +1,16 @@
 //declaring variables
 
+const form = document.querySelector("#quiz");
+const feedback = document.querySelector("#quiz");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-function getResults(){
-  let choice1=0;
-  let choice2=0;
-  let choice3=0;
-
-  let choicesArray=document.getElementsByTagName('input');
-
-let q1 = document.getElementById('q1')
-let q2 = document.getElementById('q2')
-let q3 = document.getElementById('q3')
-let q4 = document.getElementById('q4')
-let q5= document.getElementById('q5')
-
-console.log(q1, q2, q3, q4, q5)
+  const q1 = document.querySelector("input[name=q1]:checked").value;
+  const q2 = document.querySelector("input[name=q2]:checked").value;
+  const q3 = document.querySelector("input[name=q3]:checked").value;
+  const q4 = document.querySelector("input[name=q4]:checked").value;
+  const q5 = document.querySelector("input[name=q5]:checked").value;
 
 
     
